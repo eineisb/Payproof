@@ -27,6 +27,11 @@ jobs:
       - run: npm run build
         env:
           BASE_PATH: /Payproof/
+      - name: Check the build output
+        run: |
+          ls -la dist
+          test -f dist/index.html && echo "index.html found"
+          touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
