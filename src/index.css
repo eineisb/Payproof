@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1628;
+  --bg-gradient: linear-gradient(160deg, #0b1628 0%, #0e1e36 55%, #122d45 100%);
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-strong: rgba(255, 255, 255, 0.10);
+  --surface-muted: #162035;
+  --ink: #f0f4fa;
+  --ink-2: #c9d8ee;
+  --muted: #7e98b8;
+  --subtle: #4e6a87;
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(172, 198, 233, 0.40);
+  --accent: #acc6e9;
+  --accent-hover: #c8daef;
+  --success: #22c55e;
+  --success-dim: rgba(34, 197, 94, 0.15);
+  --warning: #f59e0b;
+  --warning-dim: rgba(245, 158, 11, 0.15);
+  --danger: #f43f5e;
+  --danger-dim: rgba(244, 63, 94, 0.15);
+  --unverifiable: #94a3b8;
+  --unverifiable-dim: rgba(148, 163, 184, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  background-image: var(--bg-gradient);
+  color: var(--ink);
+  min-height: 100dvh;
+}
+
+.display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', Menlo, monospace;
+}
